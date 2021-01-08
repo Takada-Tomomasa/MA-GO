@@ -1,13 +1,24 @@
 <template>
-  <div class="container">
-    MA-GO
+  <div class="main-title">
+    あんしん運転サポートサービス
+    <div>
+      <img :src="logo()">
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  name:'Index',
+  methods :{
+    logo() :string{
+      const logoUrl = 'https://haruhikobacket.s3.us-east-2.amazonaws.com/005macrooioi119_TP_V.jpg'
+      return logoUrl
+    }
+  }
+})
 </script>
 
 <style>
